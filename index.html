@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="contagem" id="cont1">01</div>
+            <div class="contagem" id="cont2">02</div>
+            <div class="contagem" id="cont3">03</div>
+            <div class="contagem" id="cont4">04</div>
+        </div>
+        <div class="conteudo ct1">
+            <h1>QUAL O SEU SEGMENTO</h1>
+            <div class="op op1">CORPORATIVO</div>
+            <div class="op op1">IGREJA</div>
+            <div class="op op1">MÚSICA E ARTE</div>
+            <div class="op op1">PESSOAL</div>
+        </div>
+        <div class="mensagem">
+            <hr>
+            <p id="mensagem"></p>
+            <hr>
+        </div>
+        <div class="conteudo ct2">
+            <h1>ESCOLHA SEUS PROJECTOS</h1>
+            <div class="op-container">
+                <div class="op op2">WEBSITE</div>
+                <div class="op op2">BLOG</div>
+                <div class="op op2">MÚSICA SOCIAL</div>
+                <div class="op op2">MÍDIAS GRÁFICAS</div>
+                <div class="op op2">E-COMMERCE</div>
+                <div class="op op2">FOTOGRAFIA</div>
+                <div class="op op2">PROJECTO GRÁFICO PARA CD</div>
+                <div class="op op2">PROJECTO GRÁFICO PARA DVD</div>
+                <div class="op op2">LOGOMARCA</div>
+                <div class="op op2">PAPELARIA</div>
+                <div class="op op2">OUTRO TIPO DE PROJECTO</div>
+            </div>
+        </div>
+        <div class="conteudo ct3">
+            <h1>OUTRO TIPO DE PROJECTO</h1>
+            <p>Descreve seu projecto</p>
+            <textarea></textarea>
+        </div>
+        <div class="ct4">
+            <h1>INFORMAÇÕES PARA CONTACTO</h1>
+            <p id="projecto2"></p>
+            <div class="form-container">
+                <form name="formulario" onsubmit="validarDadosPessoaes()">
+                    <div class="formulario">
+                        <input type="text" name="nome" placeholder="Nome da Empresa" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <input type="text" name="responsavel" placeholder="responsável" required>
+                        <input type="text" name="cep" placeholder="CEP" value="+244" id="cep">
+                        <input type="number" name="telefone" placeholder="Telefone" required>
+                    </div>
+                    <div style="display: flex;justify-content: right; margin-right: 100px;margin-top:20px">
+                        <button type="submit" class="btn btn-p">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="rodape-container">
+                <button type="button" class="btn btn-v" onclick="voltar()">Voltar</button>
+                <button type="button" class="btn btn-p" onclick="proximo()">Próximo</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
